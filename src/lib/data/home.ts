@@ -3,39 +3,39 @@ import { getSkills } from './skills';
 
 export const title = 'Home';
 
-export const name = 'Name';
+export const name = 'Mavis';
 
-export const lastName = 'LastName';
+export const lastName = 'Hou';
 
 export const description =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!';
+	"I'm a new grad 👩‍🎓 who is actively looking for a backend/frontend/fullstack SDE job. I lived in the SF Bay Area 🌁, I prefer a remote/hybrid job but I'm also willing to work on site in the Bay Area.";
 
 export const links: Array<{ platform: Platform; link: string }> = [
-	{ platform: Platform.GitHub, link: 'https://github.com/' },
+	{ platform: Platform.GitHub, link: 'https://github.com/Mavis-H/' },
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/'
+		link: 'https://www.linkedin.com/in/siqian-hou-18713713a/'
 	},
-	{
-		platform: Platform.Twitter,
-		link: 'https://twitter.com/'
-	},
-	{
-		platform: Platform.StackOverflow,
-		link: 'https://stackoverflow.com/'
-	},
+	// {
+	// 	platform: Platform.Twitter,
+	// 	link: 'https://twitter.com/'
+	// },
+	// {
+	// 	platform: Platform.StackOverflow,
+	// 	link: 'https://stackoverflow.com/'
+	// },
 	{
 		platform: Platform.Email,
-		link: 'riadh_adrani@hotmail.fr'
+		link: 'mavishou@gmail.com'
 	},
-	{
-		platform: Platform.Youtube,
-		link: 'https://www.youtube.com'
-	},
-	{
-		platform: Platform.Facebook,
-		link: 'https://www.facebook.com'
-	}
+	// {
+	// 	platform: Platform.Youtube,
+	// 	link: 'https://www.youtube.com'
+	// },
+	// {
+	// 	platform: Platform.Facebook,
+	// 	link: 'https://www.facebook.com'
+	// }
 ];
 
 export const skills = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');

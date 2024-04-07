@@ -14,7 +14,7 @@ const Assets = {
 	Cpp: a('cpp.svg'),
 	Celery: a('celery.svg'),
 	Django: a('django.svg'),
-	FastApi: a('fastapi'),
+	FastAPI: a('fastapi.svg'),
 	Flask: a('flask.svg'),
 	Go: a('go.svg'),
 	Kafka: a('kafka.svg'),
@@ -27,7 +27,7 @@ const Assets = {
 	Scrapy: a('scrapy.png'),
 	Selenium: a('selenium.svg'),
 	Docker: a('docker.svg'),
-	Kubernetes: a('kubernetees.svg'),
+	Kubernetes: a('kubernetes.svg'),
 	Csharp: a('csharp.svg'),
 	Xamarin: a('xamarin.svg'),
 	TypeScript: a('ts.png'),
@@ -70,7 +70,21 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Postcss: a('postcss.svg'),
+	Swift: a('swift.svg'),
+	MATLAB: a('matlab.png'),
+	MySQL: a('mysql.svg'),
+	Snowflake: a('snowflake.png'),
+	PHP: a('php.png'),
+	Terraform: a('terraform.svg'),
+	Datadog: a('datadog.png'),
+	Unity: a('unity.svg'),
+	Linux: a('linux.png'),
+	Git: a('git.png'),
+	Jira: a('jira.svg'),
+	Confluence: a('confluence.png'),
+	PyCharm: a('pycharm.png'),
+	VSCode: a('vscode.svg')
 };
 
 export default Assets;
