@@ -84,7 +84,10 @@ const Assets = {
 	Jira: a('jira.svg'),
 	Confluence: a('confluence.png'),
 	PyCharm: a('pycharm.png'),
-	VSCode: a('vscode.svg')
+	VSCode: a('vscode.svg'),
+	CertiK: a('certik.png'),
+	WashU: a('washu.png'),
+	UNNC: a('unnc.png')
 };
 
 export default Assets;

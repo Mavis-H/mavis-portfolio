@@ -74,7 +74,7 @@ export interface Education<S extends string = string> extends Item<S> {
 	location: string;
 	period: {
 		from: Date;
-		to?: Date;
+		to: Date;
 	};
 	subjects: Array<string>;
 	degree: string;

@@ -7,7 +7,7 @@
 
 	import { title, items } from '@data/education';
 	import type { Education } from '$lib/types';
-	import { getTimeDiff } from '$lib/utils';
+	import { getMonthName, getTimeDiff } from '$lib/utils/helpers';
 
 	let search = '';
 
@@ -63,7 +63,11 @@
 								<div class="text-[1.3em]">{education.degree}</div>
 								<div>{education.organization}</div>
 								<div class="text-[var(--accent-text)] text-[0.9em] font-200 mb-2">
-									{education.location} · {getTimeDiff(education.period.from, education.period.to)}
+									{education.location}
+									<br>
+									{getMonthName(education.period.from.getMonth())} {education.period.from.getFullYear()} - 
+									{getMonthName(education.period.to.getMonth())} {education.period.to.getFullYear()} · 
+									{education.period.to.getFullYear() - education.period.from.getFullYear()} years
 								</div>
 								<div class="row flex-wrap gap-1">
 									{#each education.subjects as subject}
