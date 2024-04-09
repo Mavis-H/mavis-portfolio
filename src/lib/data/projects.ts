@@ -4,36 +4,42 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'one-million-dollar-webpage-cryptocurrency',
 		color: '#5e95e3',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			'- Applied <b>ORM</b> technique. Optimized data transfer speed by developing a custom pixel encoding scheme.\n' +
+			'- Allow users to register, log in, log out, buy or sell pixels, and set or edit pixel info(color, link, price, description).\n' +
+			'- Verify user transactions through <b>cryptocurrency</b> transactions on <b>Goerli (Görli) Testnet</b> (through self-created MHP tokens).\n' +
+			'- Deployed to <b>EC2</b> for better scaling.',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
-		period: {
-			from: new Date()
+			"Replicate the famous 'The Million Dollar Homepage' with <b>React.js</b>, <b>Flask</b> and <b>PostgreSQL</b> while combined with <b>blockchain</b> technique.",
+		links: [{ to: 'https://github.com/Mavis-H/onemillion_replica', label: 'GitHub' }],
+		logo: Assets.OneMillion,
+		name: 'One Million Dollars Webpage Replication with Cryptocurrency',
+		period: { 
+			from: new Date(2021, 11, 0), 
+			to: new Date() 
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
+		skills: getSkills('python', 'reactjs', 'postgresql', 'flask', 'git', 'aws'),
+		type: 'Web Application'
 	},
 	{
-		slug: 'slick-portfolio-svelte',
+		slug: 'trashman-2d-video-game',
 		color: '#ff3e00',
 		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'- Core-loop: Explore maps, pick/trade items, attack/run from monsters, collect coins, buy powerful props, get a star before running out of energy, and pass to the next level.\n' +
+			'- Led a group of 4 developers and built the game including 5 modules (health system, inventory system, GUI system, controller system, random treasure drop system) following <b>OOD</b> principles. Used <b>scriptable objects</b> as data containers to manage inventory data.\n',
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
+			'A strategy based 2D adventure game developed using <b>Unity</b> and <b>C#</b>. Be a brave trashman!',
+		links: [{ to: 'https://github.com/Mavis-H/VG1-Trashman', label: 'GitHub' }],
+		logo: Assets.Trashman,
+		name: 'Trashman 2D Video Game',
 		period: {
-			from: new Date()
+			from: new Date(2022, 2, 0), 
+			to: new Date(2022, 6, 0)
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template',
+		skills: getSkills('unity', 'csharp', 'git'),
+		type: '2D Game',
 		screenshots: [
 			{
 				label: 'screen 1',

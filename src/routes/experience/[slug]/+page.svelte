@@ -77,7 +77,7 @@
 				<div class="px-10px m-y-5">
 					{#if data.experience.description}
 						<Markdown
-							content={data.experience.description ?? 'This place is yet to be filled...'}
+							content={data.experience.description}
 						/>
 					{:else}
 						<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">

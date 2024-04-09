@@ -37,7 +37,7 @@
 	color={experience.color}
 >
 	<div class="col md:flex-row items-start gap-5 md:gap-1">
-		<CardLogo src={getAssetURL(experience.logo)} alt={experience.company} size={55} />
+		<CardLogo src={getAssetURL(experience.logo)} alt={experience.company} size={60} />
 		<div class="col ml-0 md:ml-[20px] gap-3 w-full">
 			<div class="col ">
 				<h3

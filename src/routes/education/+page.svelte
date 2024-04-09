@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Card from '$lib/components/Card/Card.svelte';
+	import CardLogo from '$lib/components/Card/CardLogo.svelte';
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import SearchPage from '$lib/components/SearchPage.svelte';
@@ -53,12 +54,12 @@
 					<div class="col flex-1 items-stretch">
 						<Card>
 							<div class="flex-1 col gap-2 items-stretch">
-								<img
+								<CardLogo
 									src={getAssetURL(education.logo)}
 									alt={education.organization}
-									height="50"
-									width="50"
-									class="mb-5"
+									radius={'0px'}
+									size={60}
+									classes="mr-2"
 								/>
 								<div class="text-[1.3em]">{education.degree}</div>
 								<div>{education.organization}</div>

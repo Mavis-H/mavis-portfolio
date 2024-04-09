@@ -25,7 +25,7 @@
 </script>
 
 <Card color={project.color} href={`${base}/projects/${project.slug}`}>
-	<CardLogo alt={project.name} src={getAssetURL(project.logo)} size={40} radius={'0'} />
+	<CardLogo alt={project.name} src={getAssetURL(project.logo)} size={60} radius={'0'} />
 	<div class="m-t-20px row justify-between items-center">
 		<CardTitle title={project.name} />
 		<div class="row">
@@ -43,9 +43,9 @@
 	</div>
 	<div class="col sm:h-100px md:h-160px">
 		<p
-			class="text-[0.95em] text-[var(--secondary-text)] font-300 m-t-20px m-b-40px flex-1 line-clamp-3"
+			class="text-[0.95em] text-[var(--secondary-text)] font-300 m-t-20px m-b-40px flex-1 line-clamp-4"
 		>
-			{project.shortDescription}
+			{@html project.shortDescription}
 		</p>
 	</div>
 	<div class="row justify-between text-0.8em font-400">

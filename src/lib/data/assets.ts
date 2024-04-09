@@ -85,9 +85,13 @@ const Assets = {
 	Confluence: a('confluence.png'),
 	PyCharm: a('pycharm.png'),
 	VSCode: a('vscode.svg'),
+	ECS: a('ecs.png'),
+	Fargate: a('fargate.png'),
 	CertiK: a('certik.png'),
 	WashU: a('washu.png'),
-	UNNC: a('unnc.png')
+	UNNC: a('unnc.png'),
+	OneMillion: a('onemillion.png'),
+	Trashman: a('dragon.png')
 };
 
 export default Assets;
