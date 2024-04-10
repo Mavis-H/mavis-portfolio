@@ -87,11 +87,18 @@ const Assets = {
 	VSCode: a('vscode.svg'),
 	ECS: a('ecs.png'),
 	Fargate: a('fargate.png'),
+	Xcode: a('xcode.png'),
+	SocketIO: a('socketio.png'),
+	Apache: a('apache.png'),
 	CertiK: a('certik.png'),
 	WashU: a('washu.png'),
 	UNNC: a('unnc.png'),
 	OneMillion: a('onemillion.png'),
-	Trashman: a('dragon.png')
+	Trashman: a('dragon.png'),
+	ToDue: a('todue.png'),
+	OnlineCalendar: a('calendar.png'),
+	NewsWebsite: a('news.png'),
+	ChatRoom: a('chatroom.png')
 };
 
 export default Assets;

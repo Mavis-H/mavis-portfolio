@@ -47,7 +47,7 @@
 				</h3>
 				<div class="row flex-wrap items-start m-b-2 gap-1 text-0.9em font-300">
 					{#each info as item}
-						<Chip>
+						<Chip href={experience.links[0].to}>
 							<UIcon icon={item.icon} />
 							<span class="m-l-1">{item.label}</span>
 						</Chip>

@@ -13,19 +13,37 @@ export const items: Array<Project> = [
 			'- Deployed to <b>EC2</b> for better scaling.',
 		shortDescription:
 			"Replicate the famous 'The Million Dollar Homepage' with <b>React.js</b>, <b>Flask</b> and <b>PostgreSQL</b> while combined with <b>blockchain</b> technique.",
-		links: [{ to: 'https://github.com/Mavis-H/onemillion_replica', label: 'GitHub' }],
+		links: [{ to: 'https://github.com/Mavis-H/onemillion_replica', label: 'GitHub'}],
 		logo: Assets.OneMillion,
 		name: 'One Million Dollars Webpage Replication with Cryptocurrency',
 		period: { 
 			from: new Date(2021, 11, 0), 
 			to: new Date() 
 		},
-		skills: getSkills('python', 'reactjs', 'postgresql', 'flask', 'git', 'aws'),
+		skills: getSkills('python', 'reactjs', 'postgresql', 'flask', 'git', 'aws', 'html', 'css'),
 		type: 'Web Application'
 	},
 	{
+		slug: 'todue-reminder-ios-app',
+		color: 'yellow',
+		description:
+			"- Developed an <b>IOS</b> App that improved the current Apple's built-in Reminder App with a visual countdown bar and integrated it with the system calendar.\n" +
+			"- Implemented the App with <b>UIViewController</b>, <b>UITableView</b>, <b>custom UITableViewCell</b>, <b>UIView</b>, and <b>EventKit</b>.",
+		shortDescription:
+			"Developed an improved version of Apple's built-in Reminder <b>IOS</b> App using <b>Xcode</b> and <b>Swift</b>.",
+		links: [{ to: 'https://github.com/TYDingding/ToDue', label: 'GitHub'}],
+		logo: Assets.ToDue,
+		name: 'ToDue Reminder IOS App',
+		period: { 
+			from: new Date(2022, 11, 0), 
+			to: new Date(2022, 12, 0) 
+		},
+		skills: getSkills('swift', 'xcode', 'git'),
+		type: 'IOS Application'
+	},
+	{
 		slug: 'trashman-2d-video-game',
-		color: '#ff3e00',
+		color: 'green',
 		description:
 			'- Core-loop: Explore maps, pick/trade items, attack/run from monsters, collect coins, buy powerful props, get a star before running out of energy, and pass to the next level.\n' +
 			'- Led a group of 4 developers and built the game including 5 modules (health system, inventory system, GUI system, controller system, random treasure drop system) following <b>OOD</b> principles. Used <b>scriptable objects</b> as data containers to manage inventory data.\n',
@@ -66,6 +84,63 @@ export const items: Array<Project> = [
 				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
 			}
 		]
+	},
+	{
+		slug: 'online-calendar',
+		color: 'purple',
+		description:
+			"- Developed an interactive online calendar that allows users registration, event addition, and management.\n" +
+			"- Enabled categorized event tagging, group collaboration on events, and selective calendar sharing based on time and category.\n" +
+			"- Implemented using <b>Javascript(AJAX)</b> to create an asynchronous frontend on the client side, and <b>PHP</b> to run the server side.",
+		shortDescription:
+			"Developed an online interactive calendar similar to Google Calendar using <b>AJAX</b>, <b>PHP</b> and <b>MySQL</b>.",
+		links: [{ to: 'https://github.com/cse330-fall-2021/module5-group-m5-502532-502936', label: 'GitHub'}],
+		logo: Assets.OnlineCalendar,
+		name: 'Online Calendar Smilar to Google Calendar',
+		period: { 
+			from: new Date(2021, 11, 0), 
+			to: new Date(2021, 12, 0) 
+		},
+		skills: getSkills('js', 'php', 'mysql', 'html', 'css', 'git'),
+		type: 'Web Application'
+	},
+	{
+		slug: 'chat-room',
+		color: 'black',
+		description:
+			"- Developed an online multi-user chat room that allows user to create public or priavte chat room with or without a secret passcode.\n" +
+			"- Room owner can manage the room by adding, removing or banning user.\n" +
+			"- User can send secret messages to other members in the same room.\n" +
+			"- Use <b>Socket.IO</b> with <b>Node.JS</b> to implement two-way asychronous communication (non-blocking I/O) between client and server.",
+		shortDescription:
+			"Developed an online multi-user chat room using <b>Javascript</b>, <b>Node.JS</b>, <b>Socket.IO</b> and <b>JSON</b>.",
+		links: [{ to: 'https://github.com/cse330-fall-2021/module6-group-m6-502532-502936', label: 'GitHub'}],
+		logo: Assets.ChatRoom,
+		name: 'Online Chat Room',
+		period: { 
+			from: new Date(2021, 11, 0), 
+			to: new Date(2021, 12, 0) 
+		},
+		skills: getSkills('js', 'nodejs', 'socketio', 'html', 'css', 'git'),
+		type: 'Website'
+	},
+	{
+		slug: 'news-website',
+		color: 'red',
+		description:
+			"- Developed a news website that allows user registration, news addition, management and comments.\n" +
+			"- Enabled categorized news tagging.",
+		shortDescription:
+			"Developed a news website using <b>PHP</b> and <b>MySQL</b>.",
+		links: [{ to: 'https://github.com/cse330-fall-2021/module3-group-m3-502532-502936', label: 'GitHub'}],
+		logo: Assets.NewsWebsite,
+		name: 'News Website',
+		period: { 
+			from: new Date(2021, 10, 0), 
+			to: new Date(2021, 11, 0) 
+		},
+		skills: getSkills('php', 'mysql', 'html', 'css', 'git'),
+		type: 'Website'
 	}
 ];
 

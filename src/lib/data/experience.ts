@@ -16,7 +16,7 @@ export const items: Array<Experience> = [
 		skills: getSkills('python', 'snowflake', 'kafka', 'redis', 'aws', 'docker', 'terraform', 'datadog', 'git', 'pycharm', 'jira', 'confluence', 'ecs', 'fargate'),
 		name: 'Software Development Intern',
 		color: 'green',
-		links: [],
+		links: [{ to: 'https://www.certik.com', label: 'CertiK'}],
 		logo: Assets.CertiK,
 		shortDescription: 'Developing blockchain monitor products.'
 	}
