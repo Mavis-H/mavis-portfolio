@@ -86,15 +86,15 @@
 					{#if data.skill.description}
 						<Markdown content={data.skill.description ?? 'This place is yet to be filled...'} />
 					{:else}
-						<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
+						<!-- <div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
 							<UIcon icon="i-carbon-text-font" classes="text-3.5em" />
 							<p class="font-300">No description</p>
-						</div>
+						</div> -->
 					{/if}
 				</div>
 			</div>
 			<div class="self-stretch mb-2">
-				<CardDivider />
+				<!-- <CardDivider /> -->
 			</div>
 			<div class="flex flex-row gap-1 self-stretch flex-wrap ">
 				<div class="px-10px">

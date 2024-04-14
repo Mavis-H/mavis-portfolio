@@ -3,6 +3,7 @@
 
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
+	import CardDivider from '$lib/components/Card/CardDivider.svelte';
 </script>
 
 <CommonPage {title}>
@@ -14,6 +15,12 @@
 		{:else}
 			<Chip>Ooops! no CV at the moment.</Chip>
 		{/if}
+	</div>
+	<div class="self-stretch mb-2">
+		<CardDivider />
+	</div>
+	<div class="resume">
+		<img src="Siqian_Hou_Resume.png" alt="Siqian_Hou_Resume"/>
 	</div>
 </CommonPage>
 

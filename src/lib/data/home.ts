@@ -26,7 +26,7 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	// },
 	{
 		platform: Platform.Email,
-		link: 'mavishou@gmail.com'
+		link: 'mavishous13@gmail.com'
 	},
 	// {
 	// 	platform: Platform.Youtube,
@@ -38,4 +38,4 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	// }
 ];
 
-export const skills = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
+// export const skills = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
