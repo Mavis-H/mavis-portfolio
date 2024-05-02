@@ -3,5 +3,6 @@ export const items = [
 	{ title: 'Projects', to: '/projects', icon: 'i-carbon-cube' },
 	{ title: 'Experience', to: '/experience', icon: 'i-carbon-development' },
 	{ title: 'Education', to: '/education', icon: 'i-carbon-education' },
+	{ title: 'Blogs', to: '/blogs', icon: 'i-carbon-blog'},
 	{ title: 'Resumé', to: '/resume', icon: 'i-carbon-result' }
 ] as const;

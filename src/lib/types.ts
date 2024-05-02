@@ -79,3 +79,10 @@ export interface Education<S extends string = string> extends Item<S> {
 	subjects: Array<string>;
 	degree: string;
 }
+
+export interface Blog<S extends string = string> extends Item<S> {
+	links: Array<Link>;
+	color: Color;
+	date: Date;
+	skills: Array<Skill<S>>;
+}

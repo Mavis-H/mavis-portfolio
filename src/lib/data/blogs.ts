@@ -1,8 +1,8 @@
 import Assets from './assets';
 import { getSkills } from './skills';
-import type { Project } from '../types';
+import type { Blog } from '../types';
 
-export const items: Array<Project> = [
+export const items: Array<Blog> = [
 	{
 		slug: 'one-million-dollar-webpage-cryptocurrency',
 		color: '#5e95e3',
@@ -16,12 +16,8 @@ export const items: Array<Project> = [
 		links: [{ to: 'https://github.com/Mavis-H/onemillion_replica', label: 'GitHub'}],
 		logo: Assets.OneMillion,
 		name: 'One Million Dollars Webpage Replication with Cryptocurrency',
-		period: { 
-			from: new Date(2021, 11, 0), 
-			to: new Date() 
-		},
-		skills: getSkills('python', 'reactjs', 'postgresql', 'flask', 'git', 'aws', 'html', 'css'),
-		type: 'Web Application'
+		date: new Date(),
+        skills: []
 	},
 	{
 		slug: 'todue-reminder-ios-app',
@@ -34,12 +30,8 @@ export const items: Array<Project> = [
 		links: [{ to: 'https://github.com/TYDingding/ToDue', label: 'GitHub'}],
 		logo: Assets.ToDue,
 		name: 'ToDue Reminder IOS App',
-		period: { 
-			from: new Date(2022, 11, 0), 
-			to: new Date(2022, 12, 0) 
-		},
-		skills: getSkills('swift', 'xcode', 'git'),
-		type: 'IOS Application'
+		date: new Date(),
+        skills: []
 	},
 	{
 		slug: 'trashman-2d-video-game',
@@ -52,12 +44,8 @@ export const items: Array<Project> = [
 		links: [{ to: 'https://github.com/Mavis-H/VG1-Trashman', label: 'GitHub' }],
 		logo: Assets.Trashman,
 		name: 'Trashman 2D Video Game',
-		period: {
-			from: new Date(2022, 2, 0), 
-			to: new Date(2022, 6, 0)
-		},
-		skills: getSkills('unity', 'csharp', 'git'),
-		type: '2D Game',
+		date: new Date(),
+        skills: [],
 		screenshots: [
 			{
 				label: 'screen 1',
@@ -97,32 +85,24 @@ export const items: Array<Project> = [
 		links: [{ to: 'https://github.com/cse330-fall-2021/module5-group-m5-502532-502936', label: 'GitHub'}],
 		logo: Assets.OnlineCalendar,
 		name: 'Online Calendar Smilar to Google Calendar',
-		period: { 
-			from: new Date(2021, 11, 0), 
-			to: new Date(2021, 12, 0) 
-		},
-		skills: getSkills('js', 'php', 'mysql', 'html', 'css', 'git'),
-		type: 'Web Application'
+		date: new Date(),
+        skills: []
 	},
 	{
 		slug: 'chat-room',
 		color: 'black',
 		description:
-			"- Developed an online multi-user chat room that allows users to create public or private chat rooms with or without a secret passcode.\n" +
-			"- Room owners can manage the room by adding, removing, or banning users.\n" +
+			"- Developed an online multi-user chat room that allows user to create public or priavte chat room with or without a secret passcode.\n" +
+			"- Room owner can manage the room by adding, removing or banning user.\n" +
 			"- User can send secret messages to other members in the same room.\n" +
-			"- Use <b>Socket.IO</b> with <b>Node.JS</b> to implement two-way asynchronous communication (non-blocking I/O) between client and server.",
+			"- Use <b>Socket.IO</b> with <b>Node.JS</b> to implement two-way asychronous communication (non-blocking I/O) between client and server.",
 		shortDescription:
 			"Developed an online multi-user chat room using <b>Javascript</b>, <b>Node.JS</b>, <b>Socket.IO</b> and <b>JSON</b>.",
 		links: [{ to: 'https://github.com/cse330-fall-2021/module6-group-m6-502532-502936', label: 'GitHub'}],
 		logo: Assets.ChatRoom,
 		name: 'Online Chat Room',
-		period: { 
-			from: new Date(2021, 11, 0), 
-			to: new Date(2021, 12, 0) 
-		},
-		skills: getSkills('js', 'nodejs', 'socketio', 'html', 'css', 'git'),
-		type: 'Website'
+		date: new Date(),
+        skills: []
 	},
 	{
 		slug: 'news-website',
@@ -135,13 +115,9 @@ export const items: Array<Project> = [
 		links: [{ to: 'https://github.com/cse330-fall-2021/module3-group-m3-502532-502936', label: 'GitHub'}],
 		logo: Assets.NewsWebsite,
 		name: 'News Website',
-		period: { 
-			from: new Date(2021, 10, 0), 
-			to: new Date(2021, 11, 0) 
-		},
-		skills: getSkills('php', 'mysql', 'html', 'css', 'git'),
-		type: 'Website'
+		date: new Date(),
+        skills: []
 	}
 ];
 
-export const title = 'Projects';
+export const title = 'Blogs';
