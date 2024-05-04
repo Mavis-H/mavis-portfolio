@@ -24,6 +24,8 @@
 			el.style.setProperty('--border-color', borderColor);
 			el.style.setProperty('--drop-color', dropColor);
 			el.style.setProperty('--bg-color', bgColor);
+			el.style.setProperty('--bg-img', bgImg ? `url(${bgImg})` : '');
+			el.style.setProperty('margin', margin);
 		}
 	}
 
@@ -55,10 +57,6 @@
 		el.style.setProperty('--rot-y', `${rY}deg`);
 	};
 
-	onMount(() => {
-		el.style.setProperty('margin', margin);
-		el.style.setProperty('--bg-img', bgImg ? `url(${bgImg})` : '');
-	});
 </script>
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->

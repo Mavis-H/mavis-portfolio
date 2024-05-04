@@ -1,21 +1,21 @@
 <script lang="ts">
 	import { items, title } from '@data/blogs';
-	import * as skills from '@data/skills';
+	import * as topics from '@data/topics';
 	import { onMount } from 'svelte';
 
-	import type { Blog, Skill } from '$lib/types';
+	import type { Blog, Topic } from '$lib/types';
 
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import BlogCard from '$lib/components/BlogCard/BlogCard.svelte';
 	import SearchPage from '$lib/components/SearchPage.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 
-	interface SkillFilter extends Skill {
+	interface TopicFilter extends Topic {
 		isSelected?: boolean;
 	}
 
-	let filters: Array<SkillFilter> = skills.items.filter((it) => {
-		return items.some((project) => project.skills.some((skill) => skill.slug === it.slug));
+	let filters: Array<TopicFilter> = topics.items.filter((it) => {
+		return items.some((blog) => blog.topics.some((topic) => topic.slug === it.slug));
 	});
 
 	let search = '';
@@ -39,7 +39,7 @@
 		displayed = items.filter((blog) => {
 			const isFiltered =
 				filters.every((item) => !item.isSelected) ||
-				blog.skills.some((tech) =>
+				blog.topics.some((tech) =>
 					filters.some((filter) => filter.isSelected && filter.slug === tech.slug)
 				);
 
@@ -71,7 +71,7 @@
 </script>
 
 <SearchPage {title} on:search={onSearch}>
-	<div class="projects-filters">
+	<div class="blogs-filters">
 		{#each filters as tech}
 			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug)}
 				>{tech.name}</Chip
@@ -84,7 +84,7 @@
 			<p class="font-300">Could not find anything...</p>
 		</div>
 	{:else}
-		<div class="projects-list mt-5">
+		<div class="blogs-list mt-5">
 			{#each displayed as blog}
 				<BlogCard {blog} />
 			{/each}
@@ -93,16 +93,16 @@
 </SearchPage>
 
 <style lang="scss">
-	.projects-list {
+	.blogs-list {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		// grid-template-columns: repeat(3, 1fr);
 		gap: 20px;
 
-		@media (max-width: 1350px) {
-			grid-template-columns: repeat(2, 1fr);
-		}
-		@media (max-width: 850px) {
-			grid-template-columns: repeat(1, 1fr);
-		}
+		// @media (max-width: 1350px) {
+		// 	grid-template-columns: repeat(2, 1fr);
+		// }
+		// @media (max-width: 850px) {
+		// 	grid-template-columns: repeat(1, 1fr);
+		// }
 	}
 </style>

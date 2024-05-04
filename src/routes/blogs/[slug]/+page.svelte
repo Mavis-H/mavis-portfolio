@@ -58,18 +58,11 @@
 						{/each}
 					</div>
 					<div class="row-center flex-wrap m-b-2">
-						{#each data.blog.skills as item}
+						{#each data.blog.topics as item}
 							<Chip
 								classes="inline-flex flex-row items-center justify-center"
-								href={`${base}/skills/${item.slug}`}
+								href={`${base}/topics/${item.slug}`}
 							>
-								<CardLogo
-									src={getAssetURL(item.logo)}
-									alt={item.name}
-									radius={'0px'}
-									size={15}
-									classes="mr-2"
-								/>
 								<span class="text-[0.9em]">{item.name}</span>
 							</Chip>
 						{/each}

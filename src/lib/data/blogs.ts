@@ -1,6 +1,7 @@
 import Assets from './assets';
 import { getSkills } from './skills';
 import type { Blog } from '../types';
+import { getTopics } from './topics';
 
 export const items: Array<Blog> = [
 	{
@@ -17,7 +18,7 @@ export const items: Array<Blog> = [
 		logo: Assets.OneMillion,
 		name: 'One Million Dollars Webpage Replication with Cryptocurrency',
 		date: new Date(),
-        skills: []
+        topics: getTopics('python', 'dp')
 	},
 	{
 		slug: 'todue-reminder-ios-app',
@@ -31,7 +32,7 @@ export const items: Array<Blog> = [
 		logo: Assets.ToDue,
 		name: 'ToDue Reminder IOS App',
 		date: new Date(),
-        skills: []
+        topics: getTopics('algorithm', 'dp')
 	},
 	{
 		slug: 'trashman-2d-video-game',
@@ -45,7 +46,7 @@ export const items: Array<Blog> = [
 		logo: Assets.Trashman,
 		name: 'Trashman 2D Video Game',
 		date: new Date(),
-        skills: [],
+        topics: getTopics('leetcode', 'dp'),
 		screenshots: [
 			{
 				label: 'screen 1',
@@ -86,7 +87,7 @@ export const items: Array<Blog> = [
 		logo: Assets.OnlineCalendar,
 		name: 'Online Calendar Smilar to Google Calendar',
 		date: new Date(),
-        skills: []
+        topics: getTopics('python', 'dp', 'leetcode')
 	},
 	{
 		slug: 'chat-room',
@@ -102,7 +103,7 @@ export const items: Array<Blog> = [
 		logo: Assets.ChatRoom,
 		name: 'Online Chat Room',
 		date: new Date(),
-        skills: []
+        topics: getTopics('python', 'dp', 'algorithm')
 	},
 	{
 		slug: 'news-website',
@@ -116,7 +117,7 @@ export const items: Array<Blog> = [
 		logo: Assets.NewsWebsite,
 		name: 'News Website',
 		date: new Date(),
-        skills: []
+        topics: getTopics('python', 'dp', 'leetcode', 'algorithm')
 	}
 ];
 
