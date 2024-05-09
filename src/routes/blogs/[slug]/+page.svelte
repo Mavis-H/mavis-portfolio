@@ -61,7 +61,6 @@
 						{#each data.blog.topics as item}
 							<Chip
 								classes="inline-flex flex-row items-center justify-center"
-								href={`${base}/topics/${item.slug}`}
 							>
 								<span class="text-[0.9em]">{item.name}</span>
 							</Chip>
