@@ -98,7 +98,8 @@ const Assets = {
 	ToDue: a('todue.png'),
 	OnlineCalendar: a('calendar.png'),
 	NewsWebsite: a('news.png'),
-	ChatRoom: a('chatroom.png')
+	ChatRoom: a('chatroom.png'),
+	Blog_0: a('blog_0.png'),
 };
 
 export default Assets;

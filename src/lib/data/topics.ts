@@ -12,20 +12,28 @@ const defineTopic = <S extends string>(
 
 export const items = [
 	defineTopic({
-		slug: 'python',
+		slug: 'py',
 		name: 'Python'
 	}),
     defineTopic({
-		slug: 'algorithm',
+		slug: 'algo',
 		name: 'Algorithm'
 	}),
     defineTopic({
-		slug: 'leetcode',
+		slug: 'lc',
 		name: 'Leetcode'
 	}),
     defineTopic({
 		slug: 'dp',
 		name: 'Dynamic Programming'
+	}),
+    defineTopic({
+		slug: '2pointers',
+		name: 'Two Pointers'
+	}),
+    defineTopic({
+		slug: 'ar',
+		name: 'Array'
 	})
 ] as const;
 

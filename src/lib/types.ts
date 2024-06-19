@@ -84,6 +84,7 @@ export interface Education<S extends string = string> extends Item<S> {
 }
 
 export interface Blog<S extends string = string> extends Item<S> {
+	id: Number;
 	links: Array<Link>;
 	color: Color;
 	date: Date;
