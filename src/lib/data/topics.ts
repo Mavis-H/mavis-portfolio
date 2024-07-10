@@ -34,6 +34,14 @@ export const items = [
     defineTopic({
 		slug: 'ar',
 		name: 'Array'
+	}),
+    defineTopic({
+		slug: 'bt',
+		name: 'Binary Tree'
+	}),
+    defineTopic({
+		slug: 'dfs',
+		name: 'Depth First Search'
 	})
 ] as const;
 

@@ -100,6 +100,7 @@ const Assets = {
 	NewsWebsite: a('news.png'),
 	ChatRoom: a('chatroom.png'),
 	Blog_0: a('blog_0.png'),
+	Blog_1: a('blog_1.png'),
 };
 
 export default Assets;
