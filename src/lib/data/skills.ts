@@ -194,7 +194,7 @@ export const items = [
 		description: '',
 		logo: Assets.Kafka,
 		name: 'Kafka',
-		category: 'framework'
+		category: 'devtools'
 	}),
 	defineSkill({
 		slug: 'svelte',
@@ -210,7 +210,7 @@ export const items = [
 		description: '',
 		logo: Assets.Tailwind,
 		name: 'Tailwind',
-		category: 'framework'
+		category: 'library'
 	}),
 	defineSkill({
 		slug: 'sass',
@@ -218,7 +218,7 @@ export const items = [
 		description: '',
 		logo: Assets.Sass,
 		name: 'Sass',
-		category: 'framework'
+		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'aws',
@@ -346,7 +346,7 @@ export const items = [
 		description: '',
 		logo: Assets.NodeJs,
 		name: 'Node Js',
-		category: 'others'
+		category: 'library'
 	}),
 	defineSkill({
 		slug: 'socketio',
@@ -354,15 +354,15 @@ export const items = [
 		description: '',
 		logo: Assets.SocketIO,
 		name: 'Socket.IO',
-		category: 'others'
+		category: 'framework'
 	}),
 	defineSkill({
-		slug: 'apache',
-		color: 'pink',
+		slug: 'airflow',
+		color: '#429287',
 		description: '',
-		logo: Assets.Apache,
-		name: 'Apache',
-		category: 'others'
+		logo: Assets.Airflow,
+		name: 'Airflow',
+		category: 'devtools'
 	})
 ] as const;
 

@@ -101,6 +101,8 @@ const Assets = {
 	ChatRoom: a('chatroom.png'),
 	Blog_0: a('blog_0.png'),
 	Blog_1: a('blog_1.png'),
+	Airflow: a('airflow.png'),
+	ToHacking: a('tohacking.png'),
 };
 
 export default Assets;
